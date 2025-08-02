@@ -21,39 +21,7 @@
 | HTML/CSS   | Django   | SQLite3  | Bootstrap (optional) |
 | JavaScript | Python   |          | Pillow (for image handling) |
 
- 🗂️ Project Structure
-
-job-portal/
-│
-├── app/
-│ ├── migrations/
-│ ├── static/
-│ │ ├── css/
-│ │ ├── js/
-│ │ └── images/
-│ ├── templates/
-│ │ ├── signup.html
-│ │ ├── login.html
-│ │ ├── profile.html
-│ │ ├── edit_details.html
-│ │ └── job_listings.html
-│ ├── models.py
-│ ├── views.py
-│ ├── urls.py
-│ └── forms.py
-│
-├── project/
-│ ├── settings.py
-│ ├── urls.py
-│ └── wsgi.py
-│
-├── media/
-│ ├── profile_pics/
-│ └── resumes/
-│
-├── db.sqlite3
-└── manage.py
-
+ 🗂️ Project 
 
 1)Create Virtual Environment
 python -m venv venv
