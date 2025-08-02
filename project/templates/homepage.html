@@ -1,0 +1,57 @@
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+    <script src="{% static 'js/project.js' %}"></script>
+    <header>
+        <!-- Navigation Menu -->
+        <nav class="navbar">
+        <div class="logo">
+            <a href="/"><img src="{% static 'images/jobportal.png' %}" alt="Logo"></a>
+        </div>
+
+        <!-- Hamburger icon -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <!-- Menu items -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/">Home</a></li>
+            <li><a href="/user_login">Login</a></li>
+            <li><a href="/signup">Register</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+        </nav>
+
+    </header>
+     <main>
+        <img src="{% static 'images/background.jpeg' %}" alt="Job Portal Banner">
+        <p>
+            <B>
+                 Our Role-Based Job Portal is a smart and secure online platform designed to connect job seekers with potential employers. The system uses role-based access control to ensure that each user — whether an Admin, Employer, or Job Seeker — can access only the features they need. <br>
+                👥 Key Roles:<br>
+                🔒 Admin:<br>
+                   &nbsp;  &nbsp;  &nbsp; --Manages the platform, approves job listings, and oversees users and activities.<br>
+                🏢 Employer:<br>
+                    &nbsp;  &nbsp;  &nbsp;--Posts jobs, manages company profiles, and reviews applications from candidates.<br>
+                🧑‍💼 Job Seeker:<br>
+                     &nbsp;  &nbsp;  &nbsp;--Creates a profile, uploads a resume, searches for jobs, and applies with one click.
+            </B>
+          
+        </p>
+    </main>
+    <footer id="footer">
+        <p>📞 Contact Us: +91-9876543210</p>
+        <p>📧 Email: <a href="mailto:bangalore@jobportal.com">bangalore@jobportal.com</a></p>
+        <p>🏢 Address: 123 Tech Street, Hyderabad, India</p>
+        <p>&copy; 2025 Job Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

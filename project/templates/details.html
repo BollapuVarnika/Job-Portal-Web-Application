@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<!-- <header>
+    User Profile
+</header> -->
+<header>
+        <!-- Navigation Menu -->
+        <nav class="navbar">
+        <div class="logo">
+            <a href="/profile"><img src="{% static 'images/jobportal.png' %}" alt="Logo"></a>
+             <!-- 
+             -->
+        </div>
+
+        <!-- Hamburger icon -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+        <!-- Menu items -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/search_job">Search</a></li>
+            <li><a href="/profile">Home</a></li>
+             <li><a href="/user_details">Profile</a></li>
+            <li><a href="/user_login">Logout</a></li>
+        </ul>
+        </nav>
+
+    </header>
+<div class="profile-card">
+    <a href="{% url 'edit' user.username %}" class="logout-btn">Edit</a>
+
+
+    <div class="avatar">{{ user.username|slice:":1"|upper }}</div>
+    <div class="profile-info">
+        <h2>{{ user.first_name }} {{ user.last_name }}</h2>
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+    </div>
+</div>
+
+<footer>
+    <p>📞 Contact Us: +91-9876543210</p>
+    <p>📧 Email: <a href="mailto:bangalore@jobportal.com">bangalore@jobportal.com</a></p>
+    <p>🏢 123 Tech Street, Hyderabad, India</p>
+    <p>&copy; 2025 Job Portal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
